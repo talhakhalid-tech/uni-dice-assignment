@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+
+<!-- Fig. 10.9: RollDice.html -->
+<!-- HTML5 document for the dice-rolling example. -->
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Roll a Six-Sided Die 6000000 Times</title>
+    <style>
+      table,
+      th,
+      td {
+        border: 1px solid black;
+        border-collapse: collapse;
+        padding: 10px;
+      }
+      .dice-container {
+        display: flex;
+        margin: 10px;
+      }
+      .dice-image {
+        width: 75px;
+        height: 75px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        margin: 10px;
+      }
+    </style>
+    <script src="rollDice.js"></script>
+  </head>
+
+  <body>
+    <div class="dice-container">
+      <div id="die1" class="dice-image"></div>
+      <div id="die2" class="dice-image"></div>
+      <div id="die3" class="dice-image"></div>
+      <div id="die4" class="dice-image"></div>
+      <div id="die5" class="dice-image"></div>
+      <div id="die6" class="dice-image"></div>
+    </div>
+    <div class="dice-container">
+      <div id="die7" class="dice-image"></div>
+      <div id="die8" class="dice-image"></div>
+      <div id="die9" class="dice-image"></div>
+      <div id="die10" class="dice-image"></div>
+      <div id="die11" class="dice-image"></div>
+      <div id="die12" class="dice-image"></div>
+    </div>
+    <form action="#">
+      <input id="rollButton" type="button" value="Roll Dice" />
+    </form>
+
+    <div id="frequencyTableDiv"></div>
+  </body>
+</html>
